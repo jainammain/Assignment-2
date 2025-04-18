@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Yoga Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }body {
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    header {
+        background-color: #ffffff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header nav a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .hero {
+        background: url('https://images.unsplash.com/photo-1554295378-1f5d3c8cdb94?fit=crop&w=1470&q=80') no-repeat center center/cover;
+        color: white;
+        padding: 6rem 2rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        padding: 4rem 2rem;
+        background: #fff;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .classes-grid, .reviews-grid, .performance-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .card {
+        background: #fafafa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .signup-form input, .signup-form select {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .signup-form button {
+        background: #4caf50;
+        color: white;
+        padding: 0.75rem 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    footer {
+        background: #222;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+    }
+</style>
+
+</head><body>
+    <header>
+        <div><strong>Virtual Yoga Studio</strong></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Classes</a>
+            <a href="#">Instructors</a>
+            <a href="#">Schedule</a>
+            <a href="#">Search</a>
+        </nav>
+    </header><section class="hero">
+    <h1>Welcome to VR Yoga Studio</h1>
+    <p>Immerse yourself in the peace and serenity of virtual yoga classes</p>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Featured Classes</h2>
+    <div class="classes-grid">
+        <div class="card">
+            <h3>Morning Flow</h3>
+            <p>Beginner · 60 mins</p>
+        </div>
+        <div class="card">
+            <h3>Power Yoga</h3>
+            <p>Intermediate · 45 mins</p>
+        </div>
+        <div class="card">
+            <h3>Relaxation Session</h3>
+            <p>All Levels · 30 mins</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Student Reviews</h2>
+    <div class="reviews-grid">
+        <div class="card">
+            <p><strong>Sarah:</strong> I feel rejuvenated after each session.</p>
+        </div>
+        <div class="card">
+            <p><strong>Michael:</strong> Great way to start the day with positive energy.</p>
+        </div>
+        <div class="card">
+            <p><strong>Emily:</strong> Love the variety of classes available.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Join Our Community</h2>
+    <form class="signup-form">
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Sign Up</button>
+    </form>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Studio Performance Metrics</h2>
+    <div class="performance-grid">
+        <div class="card">
+            <h3>Active Users</h3>
+            <p>245 (+12%)</p>
+        </div>
+        <div class="card">
+            <h3>Completed Classes</h3>
+            <p>150 (-5%)</p>
+        </div>
+        <div class="card">
+            <h3>Overall Rating</h3>
+            <p>4.8</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Contact Us: info@virtualyoga.com | Follow Us: @virtualyoga</p>
+</footer>
+
+</body></html>
